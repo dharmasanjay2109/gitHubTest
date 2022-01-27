@@ -1,4 +1,4 @@
-package sample1;
+package sample2;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SampleTest {
+public class SampleTest2 {
 
 	WebDriver wd=null;
 	
@@ -25,7 +25,7 @@ public class SampleTest {
 		WebDriver wd=new ChromeDriver();
 		
 		wd.manage().window().maximize();
-		wd.get("https://www.google.com/");
+		wd.get("https://www.bing.com/");
 		
 		wd.findElement(By.name("q")).sendKeys("chennai");
 		wd.findElement(By.name("q")).submit();
